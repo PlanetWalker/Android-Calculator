@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="bitte_geben_sie_die_erste_zahl_ein">Bitte geben Sie die erste Zahl ein:</string>
+    <string name="multiplizieren">MULTIPLIZIEREN</string>
+    <string name="dividieren">DIVIDIEREN</string>
+    <string name="bitte_geben_sie_die_zweite_zahl_ein">Bitte geben Sie die zweite Zahl ein:</string>
+    <string name="das_var_der_beiden_zahlen_ergeben_n_00_00">Das $var der beiden Zahlen ergeben: \n 00.00</string>
+    <string name="addieren">ADDIEREN</string>
+    <string name="subtrahieren">SUBTRAHIEREN</string>
+</resources>

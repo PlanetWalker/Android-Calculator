@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewZahl1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="51dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/bitte_geben_sie_die_erste_zahl_ein"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inZ1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddieren"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="273dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/addieren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMultiplizieren"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSubtrahieren"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubtrahieren"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/subtrahieren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDividieren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddieren"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMultiplizieren"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="188dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="253dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/multiplizieren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubtrahieren" />
+
+    <Button
+        android:id="@+id/buttonDividieren"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="252dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/dividieren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSubtrahieren"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddieren"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubtrahieren" />
+
+    <TextView
+        android:id="@+id/textViewZahl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/bitte_geben_sie_die_zweite_zahl_ein"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inZ2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inZ1" />
+
+    <EditText
+        android:id="@+id/inZ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewZahl2"
+        app:layout_constraintStart_toStartOf="@+id/textViewZahl1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewZahl1"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/inZ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddieren"
+        app:layout_constraintStart_toStartOf="@+id/textViewZahl2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewZahl2"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/textViewErg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/das_var_der_beiden_zahlen_ergeben_n_00_00"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMultiplizieren"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/buttonMultiplizieren"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMultiplizieren"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
